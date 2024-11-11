@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+    <style>li{
+    text-transform:capitalize;
+    }
+    </style>
+
+</head>
+<body>
+<p style="font-style:  italic "> HTML создает структуру, а CSS  позволяет стилизовать  </p>
+
+<ol type="a"> <h3> Как сязать HTML & CSS</h3>
+    <li> создать отдельный файл с расширением .сss и затем в html-файле в головной части указать   link rel = "stylesheet" href = "style.css" </li>
+    <li> использовать закрывающийся тег  style в голове:
+             <pre style="Courier New">li{
+                font-family: Georgia;
+                font-size: 18px;
+                color: gray;
+            } </pre>
+         </li>
+    <li> использовать в описании раздела style: </li>
+     <pre style="Courier New"> p style="font-style:  italic "</pre>
+</ol>
+<p>Чтобы перестраховаться от таких ситуаций, когда при разработке сайта использовали такой шрифт, который не установлен на компьютере, необходимо использовать такое понятие как fonts fallback  "фоллбэк".
+<pre style="Courier New"> p{font-family:"Times New Roman", Georgia, serif;}</pre>
+К тексту параграфа будет применен шрифт Times New Roman
+Если же вдруг у пользователя нет такого шрифта на компьютере, тогда все тексты параграфов необходимо отображать шрифтом Georgia.
+<br>Если же и этот шрифт не найдется на компьютере пользователя, тогда отображать любым стандартным шрифтом, относящимся к группе шрифтов с засечками (serif).</p>
+<hr>
+<h3 style="font-style:  italic "> чтобы поменять регистр текста используется text-transform.  </h3>
+<ul> <h3>ТИПЫ text-tranform:</h3>
+
+    <li style="text-transform: capitalize" > text-tranform:capitalize (Первая Буква Каждого Слова Будет Большой)</li>
+    <li style="text-transform: lowercase" > text-tranform: lowercase (все буквы будут маленькими)</li>
+    <li style="text-transform: uppercase" > text-transform: uppercase (ВСЕ БУКВЫ БУДУТ БОЛЬШИМИ)</li>
+    <li style="text-transform: inherit" > text-tranform: inherit (наследует форматирование родителя) </li>
+    <li style="text-transform: none" > text-transform: none (отменяет предыдущие форматирование)</li>
+
+</ul>
+
+</body>
+</html>
