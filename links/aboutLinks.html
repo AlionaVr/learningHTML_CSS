@@ -2,9 +2,93 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About links</title>
+    <title>Tables</title>
 </head>
 <body>
 <a href="../firstSteps.html">На главную</a>
+
+    <table border="1" cellspacing="0" cellpadding="4">
+        <caption>Название таблицы</caption>
+        <tr>
+            <th>  ряд № </th>
+            <th> ячейка № </th>
+            <th> ячейка №</th>
+        </tr>
+        <tr>
+            <th> table row  1 </th>
+            <td> ячейка 11 </td>
+            <td> ячейка 12</td>
+        </tr>
+
+        <tr>
+            <th> table row  2 </th>
+            <td> ячейка 21 </td>
+            <td> ячейка 22</td>
+        </tr>
+    </table>
+
+
+    <h3> Объединение ячеек по вертикали rowspan </h3>
+
+    <table border="1" cellspacing="0" cellpadding="4">
+        <caption> сравнение моделей </caption>
+        <tr>
+            <th>  Модель </th>
+            <th> ОС </th>
+            <th> Дисплей </th>
+            <th> ОЗУ </th>
+        </tr>
+
+        <tr>
+            <th> Samsung galaxy S3 </th>
+            <td rowspan="2"> android </td>
+            <td> 5.1</td>
+            <td> 4 ГБ </td>
+        </tr>
+
+        <tr>
+            <th> Sony Xperia Z5 </th>
+            <td> 4.6</td>
+            <td rowspan="2"> 2 ГБ</td>
+        </tr>
+
+        <tr>
+            <th> Apple iPhone 6s </th>
+            <td> iOS </td>
+            <td> 4.7</td>
+        </tr>
+    </table>
+
+<h2> Объединение ячеек по горизонтали colspan </h2>
+    <table border="1" cellspacing="0" cellpadding="4">
+        <caption> Сеансы </caption>
+        <tr>
+            <th>  </th>
+            <th> 14:00 </th>
+            <th> 16:00 </th>
+            <th> 18:00 </th>
+            <th> 20:00 </th>
+        </tr>
+
+        <tr>
+            <th> Синий зал </th>
+            <td colspan = "2"> Секреты домашних животных </td>
+            <td> Джейсон Борн</td>
+            <td> Отряд самоубийц </td>
+        </tr>
+
+        <tr>
+            <th> Красный зал  </th>
+            <td> Джейсон Борн</td>
+            <td colspan="3"> Отряд самоубийц</td>
+        </tr>
+
+        <tr>
+            <th> Зеленый зал </th>
+            <td colspan="2"> Секреты домашних животных </td>
+            <td colspan="2"> Отряд самоубийц</td>
+        </tr>
+
+    </table>
 </body>
 </html>

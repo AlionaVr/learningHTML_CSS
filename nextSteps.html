@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Second Page</title>
-    </head>
-    <body>
-
-    <a href="firstSteps.html"><img src="image.jpg"></a>
-
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Page with images</title>
+</head>
+<body>
+<figure>
+    <a href="firstSteps.html"><img src="images\back-24838_640.png" style="width:128px;"
+                                   alt="Упс, не загрузилась картинка"></a>
+    <figcaption> Нажмите на картинку, чтобы перейти на главную
+    </figcaption>
+</figure>
+<ul>
+    <h3>Варианты размещения картинки</h3>
+    <img src="images/image.jpg" alt="Упс, не загрузилась картинка" style="width:128px">
+    <li> Если сначала разместить тег "img", а после него блочный элемент, например парагра (тег p), то он будет
+        перенесен на следующую строку.
+    </li>
+    <li><img src="images/image.jpg" alt="Упс, не загрузилась картинка" style="width:128px"> Если картинка помещается
+        внутри блочного, то не начинает новую строчку. Текст обтекает изображение, так как тег img прописан внутри p
+    </li>
+</ul>
+<br>
+<h5> !!Важно прописывать к картинке тег alt, чтобы выводился альтернативный текст, если картинка не загрузится </h5>
+</body>
 </html>
